@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.numbrcase.activities.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--   Content    -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgCorners"
+                    android:layout_alignLeft="@+id/imgCorners"
+                    android:layout_alignRight="@+id/imgCorners"
+                    android:layout_alignTop="@+id/imgCorners"
+                    android:src="@drawable/profile_img"
+                    android:padding="10dp"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/imgCorners"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/bordered_shape" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/job_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:textAlignment="gravity"
+                android:gravity="center"
+                android:textSize="16dp" />
+
+            <!--   Contacts   -->
+            <TextView
+                android:textAlignment="gravity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:background="@drawable/boarder"
+                android:text="contact" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:padding="8dp"
+                android:background="@drawable/row_color_shape">
+
+                <TextView
+                    android:id="@+id/phone_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile"
+                    android:textColor="@android:color/tab_indicator_text"
+                    android:textSize="16dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/contact_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/media_name"
+                    android:textColor="@android:color/tab_indicator_text"
+                    android:textSize="13dp" >
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="4dp"
+                android:padding="8dp"
+                android:background="@drawable/row_color_shape">
+
+                <TextView
+                    android:id="@+id/email_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@android:color/tab_indicator_text"
+                    android:textSize="16dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/media_name"
+                    android:textColor="@android:color/tab_indicator_text"
+                    android:textSize="13dp" >
+                </TextView>
+
+
+            </LinearLayout>
+
+
+
+
+            <!--   Contacts   -->
+            <TextView
+                android:textAlignment="gravity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:background="@drawable/boarder"
+                android:text="social medias" />
+
+            <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/profilelistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

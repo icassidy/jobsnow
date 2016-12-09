@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/media_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:text="Mobile"
+        android:paddingLeft="5dp"
+        android:textColor="@android:color/tab_indicator_text"
+        android:textSize="16dp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/media_name"
+        android:paddingLeft="5dp"
+        android:textColor="@android:color/tab_indicator_text"
+        android:textSize="11dp" >
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="5dp"
+        android:gravity="center|right"
+        android:layout_gravity="center_horizontal|center_vertical">
+
+        <ImageButton
+            android:id="@+id/call"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:src="@android:drawable/stat_sys_phone_call" >
+        </ImageButton>
+
+
+        <ImageButton
+            android:id="@+id/video"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:src="@android:drawable/presence_video_online" >
+        </ImageButton>
+
+
+        <ImageButton
+            android:id="@+id/message"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:src="@android:drawable/ic_dialog_email" >
+        </ImageButton>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

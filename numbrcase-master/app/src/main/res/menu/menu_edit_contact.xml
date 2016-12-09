@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- seach view tutorial http://javapapers.com/android/android-searchview-action-bar-tutorial-->
+    <item
+        android:id="@+id/edit"
+        android:title="Edit"
+        android:onClick="editContact"
+        app:showAsAction="always"/>
+
+</menu>

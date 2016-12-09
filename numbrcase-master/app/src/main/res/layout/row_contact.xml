@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_alignBottom="@+id/imgCorners"
+            android:layout_alignLeft="@+id/imgCorners"
+            android:layout_alignRight="@+id/imgCorners"
+            android:layout_alignTop="@+id/imgCorners"
+            android:padding="7dp"
+            android:src="@drawable/ic_menu_gallery" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/imgCorners"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/bordered_shape" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/job_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/icon"
+        android:textSize="16dp" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="25dp"
+        android:gravity="center|right"
+        android:layout_gravity="center_horizontal|center_vertical">
+
+
+        <ImageView
+            android:id="@+id/social_img_0"
+            android:layout_gravity="right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/social_img_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/social_img_2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+        </ImageView>
+
+    </LinearLayout>
+
+<!--
+    android:gravity="right|center"
+    android:textAlignment="gravity"-->
+</LinearLayout>

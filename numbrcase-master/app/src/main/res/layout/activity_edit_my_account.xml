@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFFFF"
+    tools:context="com.numbrcase.activities.AddContactActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/add_photo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/my_ic_take_photo"
+            android:onClick="changeProfilePicture">
+        </ImageButton>
+
+
+        <EditText
+            android:id="@+id/job_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/add_photo"
+            android:selectAllOnFocus="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="35dp"
+            android:hint="Name"
+            android:textSize="16dp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/contact_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone number"
+            android:layout_below="@+id/job_name"
+            android:textSize="16dp" >
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_below="@+id/contact_name"
+            android:textSize="16dp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/add_social_media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Social Media"
+            android:layout_below="@+id/phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/tab_indicator_text"
+            android:background="@drawable/botton_color_shape"
+            android:onClick="openSocialMedias"
+            />
+
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/social_medias_list_view"
+            android:layout_below="@+id/add_social_media"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"/>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
